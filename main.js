@@ -34,3 +34,14 @@ class School {
     return substituteTeachers[randInt];
   }
 }
+
+class PrimarySchool extends School {
+  constructor(name, numberOfStudents, pickupPolicy) {
+    super(name, 'primary', numberOfStudents);
+    this._pickupPolicy = pickupPolicy;
+  }
+
+  get pickupPolicy() {
+    return this._pickupPolicy;
+  }
+}
